@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+/* Navbar - اسود بيتحول بينك */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.4s ease;
+    border-bottom: 2px solid transparent;
+}
+.navbar.scrolled {
+    background: #000;
+    border-bottom: 2px solid #ff1493;
+    box-shadow: 0 5px 20px rgba(255, 20, 147, 0.4);
+}
+.navbar .logo { 
+    color: #ff1493; /* Pink */
+    font-size: 28px;
+    font-weight: 700;
+}
+.navbar ul { display: flex; list-style: none; gap: 25px; }
+.navbar a { 
+    color: #fff; 
+    text-decoration: none; 
+    transition: 0.3s; 
+}
+.navbar a:hover { color: #ff1493; }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(255,20,147,0.5)),url('images/hero-bg.jpg') no-repeat center/cover;
+}
+.hero-text h1 {
+    font-size: 55px;
+    color: #fff;
+}
+.hero-img {
+    width: 400px;
+    border-radius: 20px;
+    border: 3px solid #ff1493;
+    animation: float 3s ease-in-out infinite;
+}
+.btn {
+    padding: 15px 35px;
+    background: #ff1493; /* Pink */
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.btn:hover { 
+    transform: scale(1.1); 
+    background: #fff;
+    color: #000;
+}
+
+.about {
+    padding: 100px 50px;
+    text-align: center;
+    background: #111;
+}
+.about p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.menu { padding: 100px 50px; text-align: center; }
+.menu h2 { color: #ff1493; }
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+.card {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.4s;
+}
+.card:hover {
+    transform: translateY(-15px);
+    border-color: #ff1493;
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.5);
+}
+.card img { width: 100%; border-radius: 10px; }
+.btn-small {
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-small:hover { background: #ff1493; color: #fff; }
+
+footer { text-align: center; padding: 30px; background: #000; border-top: 2px solid #ff1493; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Designed by You - 2026 */
