@@ -13,7 +13,7 @@
 - **الأيقونات**: Font Awesome
 
 ## لينك الموقع التجريبي
-[شاهد الموقع](حطي لينك الموقع https://shrookahmed166.github.io/good-food/هنا)
+](حطي لينك الموقع https://shrookahmed166.github.io/good-food/)
 
 ## طريقة التشغيل
 1. حمل لينك الموقع
